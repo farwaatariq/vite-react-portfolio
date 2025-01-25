@@ -8,21 +8,22 @@ import js from "../assets/js.png";
 import html from "../assets/html-5.png";
 import css from "../assets/css-3.png";
 import ui from "../assets/ui.png";
-import backend from "../assets/coding.png";
+import web from "../assets/coding.png";
 import frontend from "../assets/front-end.png";
 import SkillCard from "../components/skill-card";
 
 export default function Portfolio () {
 
     const skills = [
-        { img: backend, name: "Backend Dev" },
-        { img: frontend, name: "Frontend Dev" },
+        { img: web, name: "Website Dev" },
         { img: ui, name: "UI/UX" },
+        { img: frontend, name: "Frontend Dev" },
     ];
 
     return (
         <>
             <NavBar/>
+            {/* about */}
             <section id="about" className="flex flex-col lg:flex-row justify-between max-w-full pt-20 px-20 mb-10">
                 <div className="flex flex-col gap-y-6">
                     <div>
@@ -51,6 +52,7 @@ export default function Portfolio () {
                 </div>
                 <img src={illustration} alt="illustration" className="h-[500px]"/>
             </section>
+            {/* expertise */}
             <section id="expertise" className="bg-fade p-8">
                 <h1 className="text-center text-cream text-4xl font-semibold">My Expertise</h1>
                 <div className="mt-8 flex flex-col lg:flex-row gap-6 justify-center">
@@ -58,6 +60,10 @@ export default function Portfolio () {
                         <SkillCard key={index} skill={skill} />
                     ))}
                 </div>
+            </section>
+            {/* projects */}
+            <section className="bg-transparent p-8">
+                <h3 className="text-4xl font-semibold">Projects</h3>
             </section>
         </>
     );
