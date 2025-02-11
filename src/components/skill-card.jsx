@@ -6,7 +6,7 @@ export default function SkillCard ({skill}) {
 
     return (
         <motion.div
-            className="flex flex-col gap-6 items-center justify-center border-cream border-2 p-8 rounded-lg"
+            className="flex flex-col gap-6 items-center justify-center border-cream-100 border-2 p-8 rounded-lg"
             whileHover={{ rotate: 4, scale: 1 }} // Tilt slightly and scale up on hover
             initial={{ opacity: 0, y: 50 }} // Start invisible and move from bottom
             whileInView={{ opacity: 1, y: 0 }} // Animate to visible and stationary
@@ -14,7 +14,7 @@ export default function SkillCard ({skill}) {
             transition={{ duration: 0.6, ease: "easeOut" }} // Customize the animation timing
         >
             <img src={skill.img} alt={skill.name} className="rounded-md h-40"/>
-            <h3 className="text-lg font-semibold text-cream">{skill.name}</h3>
+            <h3 className="text-lg font-semibold text-cream-100">{skill.name}</h3>
         </motion.div>
     );
 }

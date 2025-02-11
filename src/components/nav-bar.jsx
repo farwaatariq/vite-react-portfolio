@@ -11,7 +11,7 @@ export default function NavBar () {
     ];
 
     return (
-        <div className="max-w-full bg-transparent flex justify-between px-8 py-4">
+        <div className="max-w-full bg-transparent flex justify-between px-8">
             <img src={portfolio} alt="portfolio logo" className="h-10"/>
             <div className="flex font-semibold">
                 {menuItems.map((item) => (

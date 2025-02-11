@@ -8,7 +8,16 @@ export default {
     extend: {
       colors: {
         fade: "#222222",
-        cream: "#F4EEEA",
+        cream: {
+          100: "#F4EEEA",
+          200: "#D0B9A9",
+        },
+        pie: "#E6D9D0",
+        sage: {
+          100: "#FAFCED",
+          200: "#EEF7C7",
+          300: "#dcef8d",
+        },
       }
     },
   },
